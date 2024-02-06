@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Alram Clock</title>
+</head>
+<body>
+    <section class="container">
+        <div id="clock"></div>
+        <input onchange="setAlarmTime(this.value)" id="alarmTimeSelect" name="alarmTime" type="datetime-local">
+        <div class="controls">
+            <button onclick="setAlarm()" class="button set-alarm">Set alarm</button>
+            <button onclick="clearAlarm()" class="button clear-alarm">Delete alarm</button>
+          <button class="button snooze" onClick="snooze()">Snooze</button>
+          <span id="alarm">Alarm not set</span>
+        </div>
+    </section>
+    <script src="index.js"></script>
+</body>
+</html>
